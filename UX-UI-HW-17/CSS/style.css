@@ -1,0 +1,141 @@
+
+/*Header*/
+
+.navigation{
+    background-color: #eeeffa;
+    display:flex;
+    justify-content: center;
+
+}
+
+.inlineBlock{
+    display:flex;
+    background-color:#eeeffa;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 60px;
+    padding: 1%;
+}
+
+.headerName{
+    display: flex;
+    width:400px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: left;
+    margin-right: 250px;
+}
+
+.emilyleibowitz{
+    font-size: 30px;
+    margin-left: 10px;   
+}
+
+.navBar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navBar li{
+    margin: 10px;
+    font-family: "Fraunces";
+    list-style-type: none;
+    font-size: 16px;
+    text-align: center;
+}
+
+/*Hero Section*/
+
+
+.heroSection{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eeeffa;
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+}
+
+.heroMessage{
+    display:flex;
+    justify-content: center;
+    margin:200px 0px 50px 0px;
+}
+
+.heroButtons li{
+    list-style-type: none;
+}
+
+.heroButtons{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0px 0px 200px 0px
+
+}
+
+#learnMore{
+    border:1.5px solid black;
+    border-radius: 20pt;
+    padding:10px 15px 10px 15px;
+    margin-right: 200px;
+}
+
+#getInTouch{
+    border:1.5px solid black;
+    border-radius: 20pt;
+    padding:10px 15px 10px 15px;
+}
+
+
+/*footer*/
+
+.footer{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eeeffa;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.footerContent{
+    display:flex;
+    align-content: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.footerRight{
+    display:flex;
+    flex-direction: row;
+    margin-left: 50px;
+}
+
+.footerRight li{
+    list-style-type: none;
+    line-height: 200%;
+    font-size: 12px;
+}
+
+.footerLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1%;
+}
+
+#links1{
+    margin-left: 600px;
+    margin-right: 20px;
+}
+
+.subFoot{
+    font-size:12px;
+    margin-top: 5px
+}
+
+.footName{
+    margin-bottom: 18px;
+}
