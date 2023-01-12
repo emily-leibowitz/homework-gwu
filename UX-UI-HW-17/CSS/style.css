@@ -16,7 +16,7 @@
 }
 
 .logo{
-    width: 60px;
+    width: 50px;
     padding: 1%;
 }
 
@@ -30,8 +30,10 @@
 }
 
 .emilyleibowitz{
-    font-size: 30px;
-    margin-left: 10px;   
+    font-size: 24px;
+    margin-left: 10px;
+    font-family:Helvetica;
+    font-weight: 100;
 }
 
 .navBar{
@@ -41,7 +43,7 @@
 
 .navBar li{
     margin: 10px;
-    font-family: "Fraunces";
+    font-family: Arial;
     list-style-type: none;
     font-size: 16px;
     text-align: center;
@@ -138,4 +140,5 @@
 
 .footName{
     margin-bottom: 18px;
+    font-weight: 300
 }
