@@ -5,28 +5,123 @@
     background-color: #eeeffa;
     display:flex;
     justify-content: center;
+    align-content: center;
 
 }
 
 .inlineBlock{
-    display:flex;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 250px 250px 250px 250px;
+    grid-template-areas: 
+        "lightDarkMode lightDarkMode"
+        "headerName navBar";
     background-color:#eeeffa;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
+
 }
+
+
+.lightDarkMode{
+    padding: 20px 30px 20px 30px;
+    grid-area: lightDarkMode;
+    grid-column: 4;
+    display: flex;
+    align-content: center;
+    justify-content: flex-end;
+
+}
+
+.lightMode{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.darkMode{
+    width: 30px;
+    height: 30px;
+    margin-left:10px;
+}
+
+/* radio toggle begin*/
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(255, 253, 242);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: rgb(103, 173, 220);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #07243d;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #042643;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  /* radio toggle end*/
 
 .logo{
     width: 50px;
+    height: 50px;
     padding: 1%;
 }
 
 .headerName{
+    grid-area: headerName;
     display: flex;
-    width:400px;
+    width:auto;
+    justify-content: center;
     align-items: center;
-    flex-direction: row;
-    justify-content: left;
-    margin-right: 250px;
+
 }
 
 .emilyleibowitz{
@@ -36,17 +131,25 @@
     font-weight: 100;
 }
 
+
 .navBar{
+    grid-area: navBar;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: flex-end;
+    grid-column: 4;
 }
 
 .navBar li{
+    /*background-color: rgb(177, 164, 190, .7);
+    border-radius: 10px;
+    padding: 10px 15px 10px 15px;*/
     margin: 10px;
     font-family: Arial;
     list-style-type: none;
     font-size: 16px;
     text-align: center;
+    grid-area: navBar;
 }
 
 /*Hero Section*/
@@ -90,6 +193,18 @@
     border-radius: 20pt;
     padding:10px 15px 10px 15px;
 }
+
+/*About Me*/
+
+.aboutMe{
+    height: 500px;
+    background-color: #eeeffa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 /*footer*/

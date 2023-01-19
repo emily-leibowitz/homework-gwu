@@ -18,16 +18,26 @@
 <body>
     <header class="navigation">
         <div class="inlineBlock">
-            <div class="headerName">
+
+            <div class="lightDarkMode" id="catGridArea">
+                <img class="lightMode" src="images/lightMode.png">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                  </label>
+                <img class="darkMode" src="images/darkMode.png">
+            </div>
+
+            <div class="headerName" id="catGridArea">
                 <img class="logo" src="images/designlogo.png">
                 <p class="emilyleibowitz">Emily Leibowitz</p>
             </div>
-            <ul class="navBar">
-                <li>Home</li>
-                <li>About</li>
-                <li>Projects</li>
-                <li>Resume</li>
-                <li>Contact</li>
+            <ul class="navBar" id="catGridArea">
+                <li class="homeHover">Home</li>
+                <li class="aboutHover">About</li>
+                <li class="projectshover">Projects</li>
+                <li class="resumeHover">Resume</li>
+                <li class="contactHover">Contact</li>
             </ul>
         </div>
     </header>
@@ -40,6 +50,38 @@
             </ul>
     </section>
 
+    <section class="aboutMe">
+        <h1 id="aboutMe">About Me</h1>
+        <p id="aboutMeContent">A passion for design began early on in my life. I have always had an interest in color, form,
+            and function. As a UX and UI designer, I am able to put my interests to work in designing
+            products and systems that make life easier and more enjoyable for everyone.
+            My goal is to empower others through thoughtful design, inclusivity, and human interaction. Everyone deserves access to helpful tools and products. I’m here to make sure users feel heard, understood, and their needs are met.</p>
+    </section>
+
+    <section class="mySkills">
+        <h1 id="mySkillsh1">My UX Skills</h1>
+        <div class="skillsContainer">
+            <div class="skill">
+                <img id="uxicon" src="images/UX Icon.png">
+                <h3> User Research </h3>
+                <p> User Reasearch Content Goes Here</p>
+            </div>
+
+            <div class="skill">
+                <img id="uiicon" src="images/UI Icon.png">
+                <h3> User Interface Design </h3>
+                <p> User Interface Design Content Goes Here</p>
+            </div>
+
+            <div class="skill">
+                <img id="wdicon" src="images/Web Dev Icon.png">
+                <h3> Web Development </h3>
+                <p> Web Development Content Goes Here</p>
+            </div>
+
+        </div>
+    </section>
+
     <footer class="footer">
         <div class="footerContent">
             <div class="footerLeft">
@@ -49,13 +91,13 @@
             </div>
             <div class="footerRight">
                 <ul id="links1">
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Projects</li>
-                    <li>Resume</li>
+                    <li class="homeHover">Home</li>
+                    <li class="aboutHover">About</li>
+                    <li class="projectshover">Projects</li>
+                    <li class="resumeHover">Resume</li>
                 </ul>
             <ul id="links2">
-                <li>Contact</li>
+                <li class="contactHover">Contact</li>
                 <li>Linkedin</li>
                 <li>Instagram</li>
                 <li>Pinterest</li>
