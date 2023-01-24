@@ -273,9 +273,14 @@
 
 /*My Work*/
 
+.myWorkH1{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 50px;
+}
+
 .workGrid{
     display:grid;
-    grid-template-columns:  auto auto;
+    grid-template-columns:  500px 500px;
     grid-template-rows: auto auto;
     justify-content: space-evenly;
     row-gap: 100px;
@@ -297,22 +302,37 @@
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    padding: 50px;
+    white-space: nowrap;
+    padding: 10px 50px 50px 50px;
 }
 
 .projectButton{
     padding:12px;
+    margin-top: 10px;
     border-radius: 25px;
     color: white;
     background-color: black;
 }
 
 .trippy{
-    width: 300px
+    width: 300px;
+    border-radius: 25pt;
+    
 }
 
 .wingmate{
-    width:300px
+    width:300px;
+    border-radius: 25pt;
+}
+
+.restoreHope{
+    width:300px;
+    border-radius: 25pt;
+}
+
+.vCourt{
+    width:300px;
+    border-radius: 25pt;
 }
 .projectTwo{
     grid-area: pTwo;
@@ -320,7 +340,7 @@
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    padding: 50px;
+    padding: 10px 50px 50px 50px;
 }
 
 .projectThree{
@@ -329,7 +349,7 @@
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    padding: 50px;
+    padding: 10px 50px 50px 50px;
 }
 
 .projectFour{
@@ -338,13 +358,17 @@
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    padding: 50px;
+    padding: 10px 50px 50px 50px;
 }
 
 .projects{
     font-family: Arial, Helvetica, sans-serif;
-    border: black 5px solid;
+    background-color: #C7DEE8;
     border-radius: 20px;
+}
+
+h4{
+    font-size: 24px;
 }
 /*footer*/
 
