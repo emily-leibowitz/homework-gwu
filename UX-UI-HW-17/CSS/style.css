@@ -294,42 +294,56 @@
 .projectOne{
     grid-area: pOne;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-content: center;
-    background-color: aqua;
     padding: 50px;
 }
 
+.projectButton{
+    padding:12px;
+    border-radius: 25px;
+    color: white;
+    background-color: black;
+}
+
+.trippy{
+    width: 300px
+}
+
+.wingmate{
+    width:300px
+}
 .projectTwo{
     grid-area: pTwo;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-content: center;
-    background-color: rgb(77, 255, 0);
     padding: 50px;
 }
 
 .projectThree{
     grid-area: pThree;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-content: center;
-    background-color: rgb(0, 255, 179);
     padding: 50px;
 }
 
 .projectFour{
     grid-area: pFour;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-content: center;
-    background-color: rgb(115, 57, 165);
     padding: 50px;
 }
 
 .projects{
     font-family: Arial, Helvetica, sans-serif;
-    border: black 5px;
+    border: black 5px solid;
     border-radius: 20px;
 }
 /*footer*/
