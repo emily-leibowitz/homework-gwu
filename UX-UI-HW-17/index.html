@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="CSS/style.css" rel="stylesheet" type="text/css">
     <title>Portfolio Home Page</title>
-    <link href="https://fonts.google.com/specimen/Fraunces?query=fraunces" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&display=swap" rel="stylesheet">
 </head>
 
 
@@ -16,9 +18,24 @@
 
 
 <body>
+    <div class="heroBack">
     <header class="navigation">
         <div class="inlineBlock">
 
+    
+
+            <div class="headerName" id="catGridArea">
+                <img class="logo" src="images/designlogo.png">
+                <p class="emilyleibowitz">Emily Leibowitz</p>
+            </div>
+
+            <ul class="navBar" id="catGridArea">
+                <li class="homeHover">Home</li>
+                <li class="aboutHover">About</li>
+                <li class="projectshover">Projects</li>
+                <li class="resumeHover">Resume</li>
+                <li class="contactHover">Contact</li>
+            </ul>
             <div class="lightDarkMode" id="catGridArea">
                 <img class="lightMode" src="images/lightMode.png">
                 <label class="switch">
@@ -27,18 +44,6 @@
                   </label>
                 <img class="darkMode" src="images/darkMode.png">
             </div>
-
-            <div class="headerName" id="catGridArea">
-                <img class="logo" src="images/designlogo.png">
-                <p class="emilyleibowitz">Emily Leibowitz</p>
-            </div>
-            <ul class="navBar" id="catGridArea">
-                <li class="homeHover">Home</li>
-                <li class="aboutHover">About</li>
-                <li class="projectshover">Projects</li>
-                <li class="resumeHover">Resume</li>
-                <li class="contactHover">Contact</li>
-            </ul>
         </div>
     </header>
 
@@ -49,17 +54,18 @@
                 <li id="getInTouch">Get in Touch</li>
             </ul>
     </section>
+    </div>
 
+    <h1 id="aboutMe">About Me</h1>
     <section class="aboutMe">
-        <h1 id="aboutMe">About Me</h1>
         <p id="aboutMeContent">My passion for design began early in life with an innate interest in color, form,
             and function. <br> As a UX and UI designer, I am able to put my interests to work in designing
             products and systems that make life easier and more enjoyable for everyone.
             My goal is to empower others through thoughtful design, inclusivity, and human interaction. Everyone deserves access to helpful tools and products. I’m here to make sure users feel heard, understood, and their needs are met.</p>
     </section>
 
+    <h1 id="mySkillsH1">My UX Skills</h1>
     <section class="mySkills">
-        <h1 id="mySkillsH1">My UX Skills</h1>
         <div class="skillsContainer">
             <div class="skill uxSkill">
                 <img class="skillIcon" src="images/UX Icon.png">
@@ -83,8 +89,8 @@
         </div>
     </section>
 
+    <h1 class="myWorkH1"> My Work </h1>
     <section class="myWork">
-        <h1 class="myWorkH1"> My Work </h1>
         <div class="workGrid">
 
             <div class="projectOne projects">
@@ -92,10 +98,11 @@
                     <img class="trippy" src="images/trippipic.png">
                 </div>
                 <div class="projectBlock">
-                    <h4>Trippi</h4>
-                    <p>A comprehensive travel app: <br> Research, plan, organize, and communicate all in one place.</p>
+                    <p class="projectTitle">Trippi</p>
+                    <p class="projectType">UX Design</p>
+                    <p class="projectText">A comprehensive travel app: <br> Research, plan, organize, and communicate all in one place.</p>
+                    <button class="projectButton">View Case Study</button>
                 </div>
-                <button class="projectButton">View Casestudy</button>
             </div>
 
             <div class="projectTwo projects">
@@ -103,10 +110,11 @@
                     <img class="wingmate" src="images/wingmatepic.png">
                 </div>
                 <div class="projectBlock">
-                    <h4>Wingmate</h4>
-                    <p>A new approach to online dating. <br>Let your friends choose your date.</p>
+                    <p class="projectTitle">Wingmate</p>
+                    <p class="projectType">UX Design</p>
+                    <p class="projectText">A new approach to online dating. <br>Let your friends choose your date.</p>
+                    <button class="projectButton">View Case Study</button>
                 </div>
-                <button class="projectButton">View Casestudy</button>
             </div>
             
             <div class="projectThree projects">
@@ -114,10 +122,11 @@
                     <img class="restoreHope" src="images/RHA.png">
                 </div>
                 <div class="projectBlock">
-                    <h4>Restore Hope Arkansas Website Redesign</h4>
-                    <p>Refreshing the UI Design of a non-profit website</p>
+                    <p class="projectTitle">Restore Hope Arkansas</p>
+                    <p class="projectType">UI Design</p>
+                    <p class="projectText">Refreshing the UI Design of a non-profit website</p>
+                    <button class="projectButton">View Case Study</button>
                 </div>
-                <button class="projectButton">View Casestudy</button>
             </div>    
 
             <div class="projectFour projects">  
@@ -125,15 +134,18 @@
                     <img class="vCourt" src="images/vcourt.png">
                 </div>
                 <div class="projectBlock">
-                    <h4>Virginia Court Website Redesign</h4>
-                    <p>Refreshing the UI Design of a government website</p>  
+                    <p class="projectTitle">Virginia Judicial System</p>
+                    <p class="projectType">UI Design</p>
+                    <p class="projectText">Refreshing the UI Design of a government website</p>
+                    <button class="projectButton">View Case Study</button>  
                 </div>     
-                <button class="projectButton">View Casestudy</button>
             </div>    
         </div>
-            
-            <h3>View all Projects</h3>
     </section>
+    <div id="viewProject">
+    <h3 class="viewProject">View all Projects</h3>
+    </div>
+
 
     <footer class="footer">
         <div class="footerContent">

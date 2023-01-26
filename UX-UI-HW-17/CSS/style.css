@@ -1,8 +1,11 @@
 
 /*Header*/
-
+.heroBack{
+    background-image: url(../images/background.png);
+    position: relative;
+    width:1440px;
+}
 .navigation{
-    background-color: #eeeffa;
     display:flex;
     justify-content: center;
     align-content: center;
@@ -10,17 +13,11 @@
 }
 
 .inlineBlock{
-    display: grid;
-    grid-template-rows: 50% 50%;
-    grid-template-columns: 250px 250px 250px 250px;
-    grid-template-areas: 
-        "lightDarkMode lightDarkMode"
-        "headerName navBar";
-    background-color:#eeeffa;
-    justify-content: space-evenly;
-
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
 }
-
 
 .lightDarkMode{
     padding: 20px 30px 20px 30px;
@@ -29,6 +26,7 @@
     display: flex;
     align-content: center;
     justify-content: flex-end;
+    margin-left: 50px;
 
 }
 
@@ -122,13 +120,14 @@
     justify-content: center;
     align-items: center;
 
+
 }
 
 .emilyleibowitz{
     font-size: 24px;
     margin-left: 10px;
-    font-family:Helvetica;
-    font-weight: 100;
+    font-family: 'Fraunces', serif;
+    white-space: nowrap;
 }
 
 
@@ -138,16 +137,18 @@
     align-items: center;
     justify-content: flex-end;
     grid-column: 4;
+    margin: 0px 150px 0px 150px;
+
 }
 
 .navBar li{
     /*background-color: rgb(177, 164, 190, .7);
     border-radius: 10px;
     padding: 10px 15px 10px 15px;*/
-    margin: 10px;
+    margin: 24px;
     font-family: Arial;
     list-style-type: none;
-    font-size: 16px;
+    font-size: 20px;
     text-align: center;
     grid-area: navBar;
 }
@@ -157,7 +158,7 @@
 
 .heroSection{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #eeeffa;
+   
     display:flex;
     justify-content: center;
     flex-direction:column;
@@ -167,8 +168,9 @@
 .heroMessage{
     display: flex;
     justify-content: center;
-    margin:200px 0px 50px 0px;
+    margin:300px 0px 100px 0px;
     white-space: nowrap;
+    font-size: 30px;
     
 }
 
@@ -181,7 +183,7 @@
     display: flex;
     justify-content: center;
     flex-direction: row;
-    margin: 0px 0px 200px 0px;
+    margin: 0px 0px 300px 0px;
 
 }
 
@@ -204,20 +206,28 @@
 /*About Me*/
 
 .aboutMe{
-    height: 500px;
-    background-color: #eeeffa;
+    max-width: 1000px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     font-family: Arial, Helvetica, sans-serif;
+    margin-left: 100px;
+    margin-bottom: 100px;
+    
 }
 
+#aboutMe{
+    text-align: left;
+    font-family: 'Fraunces', serif;
+    font-size: 36px;
+    margin-left: 100px;
+    border-bottom: 5px #DDB7C9 solid;
+}
 #aboutMeContent{
-    width: 1000px;
+    max-width: 1440px;
     line-height: 42px;
     font-size: 20px;
-    padding-top: 10px;
 }
 
 /*My Skills*/
@@ -229,7 +239,7 @@
     flex-direction: column;
     align-items: center;
     padding-top: 50px;
-    background-color: #eeeffa;
+    max-width:1440px
 }
 
 .skillsContainer{
@@ -241,8 +251,12 @@
     
 }
 
-.mySkillsH1{
-    
+#mySkillsH1{
+    text-align: left;
+    font-family: 'Fraunces', serif;
+    font-size: 36px;
+    margin-left: 100px;   
+    border-bottom: 5px #DDB7C9 solid;
 }
 
 .skill{
@@ -273,9 +287,15 @@
 
 /*My Work*/
 
+
 .myWorkH1{
-    font-family: Arial, Helvetica, sans-serif;
-    padding-bottom: 50px;
+    
+    text-align: left;
+    margin-left: 100px;
+    font-family: 'Fraunces', serif;
+    font-size: 36px;
+    border-bottom: 5px #DDB7C9 solid;
+    margin-bottom: 100px;
 }
 
 .workGrid{
@@ -283,7 +303,7 @@
     grid-template-columns:  auto auto;
     grid-template-rows: auto auto;
     justify-content: space-evenly;
-    row-gap: 100px;
+    row-gap: 50px;
     grid-template-areas: 
         "pOne pTwo"
         "pThree pFour";
@@ -292,92 +312,126 @@
     
 }
 
-.myWorkH1{
-    text-align: center;
-}
 
 .projectBlock{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
+    width: 500px;
+    display:grid;
+    grid-template-columns: .5fr 2fr .5fr;
+    grid-template-rows: 50px 40px 100px;
+    grid-template-areas:
+        "projectTitle . projectType"
+        "projectText projectText projectText"
+        "projectButton projectButton projectButton" ;
+    justify-items: start;
+    align-items: center;
+    
+    
+    
+    
+
 }
-.projectOne{
-    grid-area: pOne;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+
+.projectType{
+    grid-area: projectType;
     white-space: nowrap;
-    padding: 10px 50px 50px 50px;
+    margin-left: 10px;
+    border: solid black 1px;
+    padding: 5px 20px 5px 20px;
+    background-color: black;
+    color: white;
 }
 
 .projectButton{
-    display: flex;
-
+    grid-area: projectButton;
     padding:12px;
-    margin-top: 10px;
     border-radius: 25px;
     color: white;
-    background-color: black;
+    background-color: #2F5061;
+    width: 150px;
+    font-weight: 600;
+
 }
 
+.projectText{
+    grid-area: projectText;
+    text-align: left;
+}
+    
+
+
 .trippy{
-    width: 300px;
+    width: 500px;
     border-radius: 25pt;
     
 }
 
 .wingmate{
-    width:300px;
+    width:500px;
     border-radius: 25pt;
 }
 
 .restoreHope{
-    width:300px;
+    width:500px;
     border-radius: 25pt;
 }
 
 .vCourt{
-    width:300px;
+    width:500px;
     border-radius: 25pt;
-}
-.projectTwo{
-    grid-area: pTwo;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    padding: 10px 50px 50px 50px;
-}
-
-.projectThree{
-    grid-area: pThree;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    padding: 10px 50px 50px 50px;
-}
-
-.projectFour{
-    grid-area: pFour;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    padding: 10px 50px 50px 50px;
 }
 
 .projects{
+    
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #C7DEE8;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-h4{
-    font-size: 18px;
-    margin-right: 20px;
+.projectTitle{
+    white-space: nowrap;
+    font-size: 16px;
+    width: fit-content;
+    padding: 5px 20px 5px 20px;
+    border:solid black 1px;
+    border-radius: 25px;
+    grid-area: projectTitle
 }
+
+#skillT{
+    font-family: 'Fraunces', serif;
+    display: flex;
+    flex-direction: center;
+    text-align: center;
+    justify-content: center;
+    margin: 75px 0px 50px 0px;
+    font-size: 36px;
+    
+    
+}
+
+#viewProject{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 50px;
+    margin-top: 25px;
+
+}
+
+.viewProject{
+    font-size: 24px;
+    border: 3px #DDB7C9 solid;
+    background-color: #DDB7C9;
+    border-radius: 50px;
+    font-family: 'Fraunces', serif;
+    width: fit-content;
+    padding: 5px 25px 5px 25px;
+    
+}
+
 /*footer*/
 
 .footer{
