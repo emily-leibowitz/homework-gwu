@@ -5,23 +5,21 @@
     background-image: url("../images/fullBackground.png");
 
 }
-/*Header*/
-.heroBack{
-    
-    max-width:1440px;
-}
-.navigation{
-    display:flex;
-    justify-content: center;
-    align-content: center;
 
-}
+
+/*Header*/
+
+
+
 
 .inlineBlock{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-content: center;
+    max-width: 1440px;
+    white-space: nowrap;
+
 }
 
 .lightDarkMode{
@@ -39,6 +37,7 @@
     width: 30px;
     height: 30px;
     margin-right: 10px;
+    margin-left: 20px;
 }
 
 .darkMode{
@@ -116,6 +115,7 @@
     width: 50px;
     height: 50px;
     padding: 1%;
+    margin-left: 30px;
 }
 
 .headerName{
@@ -130,9 +130,9 @@
 
 .emilyleibowitz{
     font-size: 24px;
-    margin-left: 10px;
     font-family: 'Fraunces', serif;
     white-space: nowrap;
+
 }
 
 
@@ -142,7 +142,6 @@
     align-items: center;
     justify-content: flex-end;
     grid-column: 4;
-    margin: 0px 150px 0px 150px;
 
 }
 
@@ -150,7 +149,9 @@
     /*background-color: rgb(177, 164, 190, .7);
     border-radius: 10px;
     padding: 10px 15px 10px 15px;*/
-    margin: 24px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
     font-family: Arial;
     list-style-type: none;
     font-size: 20px;
@@ -210,6 +211,7 @@
 
 /*About Me*/
 
+
 .aboutMe{
     max-width: 1000px;
     display: flex;
@@ -219,6 +221,7 @@
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 100px;
     margin-bottom: 200px;
+    
     
 }
 
@@ -239,12 +242,15 @@
 
 /*My Skills*/
 
+
+
 .mySkills{
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: center;
     flex-direction: row;
     align-content: center;
+    align-items: center;
     padding-top: 50px;
     max-width:1440px
 }
@@ -252,12 +258,7 @@
 .skillsContainer{
     display:flex;
     justify-content: space-evenly;
-    padding: 20px 100px 100px 100px;
-    margin-bottom: 100px;
-    
-    
-    
-    
+    margin-bottom: 100px;   
 }
 
 #mySkillsH1{
@@ -271,7 +272,7 @@
 }
 
 .skill{
-    padding:0px 150px 0px 150px;
+    padding:0px 70px 0px 70px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -293,8 +294,8 @@
 }
 
 .skillD{
-    width: 200%;
     font-size: 14pt;
+    width: 300px;
 }
 
 /*My Work*/
@@ -407,6 +408,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 75%;
 }
 
 .projectTitle{
@@ -502,6 +504,7 @@
     align-content: center;
     max-width: 1440px;
     
+    
 
 }
 
@@ -553,6 +556,19 @@
 /*Media Query*/
 
 @media only screen and (max-width: 600px) {
+    
+    .inlineBlock{
+        width:400px;
+    }
+    
+    .emilyleibowitz{display: none;}
+    
+    .navBar{display: none;}
+    
+   
+    
+    .heroMessage{font-size: 100%;}
+
     #containerGrid{
         display: flex;
         flex-direction: column;
@@ -571,6 +587,13 @@
         "pFour";
     text-align: center;
     }
+
+    .projects{
+        width: 75%;
+
+
+    }
+
     .skillsContainer{
         display: flex;
         flex-direction: column;
@@ -585,4 +608,5 @@
     flex-direction: column;
     justify-content: center;
     }
+
 }

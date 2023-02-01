@@ -19,89 +19,85 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://kit.fontawesome.com/caa84c5881.css" crossorigin="anonymous">
 </head>
 
-
-
-
-
-
-
 <body>
-    <div class="containerDiv">
-    <div class="heroBack">
-    <header class="navigation">
-        <div class="inlineBlock">
+    <div class="containerDiv" id="everythingGrid">
+            <div class="inlineBlock">
+                <div class="headerName" id="catGridArea">
+                    <img class="logo" src="images/designlogo.png">
+                    <p class="emilyleibowitz">Emily Leibowitz</p>
+                </div>
 
-    
+                <div class="navBurger">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
 
-            <div class="headerName" id="catGridArea">
-                <img class="logo" src="images/designlogo.png">
-                <p class="emilyleibowitz">Emily Leibowitz</p>
+                <ul class="navBar" id="catGridArea">
+                    <li class="homeHover">Home</li>
+                    <li class="aboutHover">About</li>
+                    <li class="projectshover">Projects</li>
+                    <li class="resumeHover">Resume</li>
+                    <li class="contactHover">Contact</li>
+                </ul>
+                <div class="lightDarkMode" id="catGridArea">
+                    <img class="lightMode" src="images/lightMode.png">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                    <img class="darkMode" src="images/darkMode.png">
+                </div>
             </div>
+        
 
-            <ul class="navBar" id="catGridArea">
-                <li class="homeHover">Home</li>
-                <li class="aboutHover">About</li>
-                <li class="projectshover">Projects</li>
-                <li class="resumeHover">Resume</li>
-                <li class="contactHover">Contact</li>
-            </ul>
-            <div class="lightDarkMode" id="catGridArea">
-                <img class="lightMode" src="images/lightMode.png">
-                <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider round"></span>
-                  </label>
-                <img class="darkMode" src="images/darkMode.png">
-            </div>
+        <section class="heroSection">
+            <h1 class="heroMessage">I design beautiful systems so you don't have to</h1>
+                <ul class="heroButtons">
+                    <li id="learnMore">Learn More</li>
+                    <li id="getInTouch">Get in Touch</li>
+                </ul>
+        </section>
+        
+
+        <div class="aboutMeContainer">
+            <h1 id="aboutMe">About Me</h1>
+            <section class="aboutMe">
+                <p id="aboutMeContent">My passion for design began early in life with an innate interest in color, form,
+                    and function. <br> As a UX and UI designer, I am able to put my interests to work in designing
+                    products and systems that make life easier and more enjoyable for everyone.
+                    My goal is to empower others through thoughtful design, inclusivity, and human interaction. Everyone deserves access to helpful tools and products. I’m here to make sure users feel heard, understood, and their needs are met.</p>
+            </section>
         </div>
-    </header>
 
-    <section class="heroSection">
-        <h1 class="heroMessage">I design beautiful systems so you don't have to</h1>
-            <ul class="heroButtons">
-                <li id="learnMore">Learn More</li>
-                <li id="getInTouch">Get in Touch</li>
-            </ul>
-    </section>
-    </div>
+    <div class="mySkillsContainer">
+            <h1 id="mySkillsH1">My UX Skills</h1>
+            <section class="mySkills">
+                <div class="skillsContainer">
+                    <div class="skill">
+                        <img class="skillIcon" src="images/UX Icon.png">
+                        <h3 class="skillT"> User Research </h3>
+                        <p class="skillD"> Designing with the user in mind. I create thoughtfully developed, enjoyable, and intuitive experiences. Taking time to get to know users and their needs to optimize satisfaction.
+                        </p>
+                    </div>
+                    <div class="skill">
+                        <img class="skillIcon" src="images/UI Icon.png">
+                        <h3 class="skillT"> User Interface Design </h3>
+                        <p class="skillD"> Beautifully designed interfaces that are easy to use. Carefully curated with visual appeal and accessibility in mind. <br> Tools: Figma, Adobe Illustrator, Invision</p>
+                    </div>
 
-    <h1 id="aboutMe">About Me</h1>
-    <section class="aboutMe">
-        <p id="aboutMeContent">My passion for design began early in life with an innate interest in color, form,
-            and function. <br> As a UX and UI designer, I am able to put my interests to work in designing
-            products and systems that make life easier and more enjoyable for everyone.
-            My goal is to empower others through thoughtful design, inclusivity, and human interaction. Everyone deserves access to helpful tools and products. I’m here to make sure users feel heard, understood, and their needs are met.</p>
-    </section>
-
-    <h1 id="mySkillsH1">My UX Skills</h1>
-    <section class="mySkills">
-        <div class="skillsContainer">
-            <div class="skill uxSkill">
-                <img class="skillIcon" src="images/UX Icon.png">
-                <h3 class="skillT"> User Research </h3>
-                <p class="skillD"> Designing with the user in mind. I create thoughtfully developed, enjoyable, and intuitive experiences. Taking time to get to know users and their needs to optimize satisfaction.
-                </p>
+                    <div class="skill">
+                        <img class="skillIcon" src="images/Web Dev Icon.png">
+                        <h3 class="skillT"> Web Development </h3>
+                        <p class="skillD"> Designing websites and applications backed by research and development. <br>Tools: Visual Studio Code and Github </p>
+                    </div>
+                </div>    
+            </section>
             </div>
 
-            <div class="skill uiSkill">
-                <img class="skillIcon" src="images/UI Icon.png">
-                <h3 class="skillT"> User Interface Design </h3>
-                <p class="skillD"> Beautifully designed interfaces that are easy to use. Carefully curated with visual appeal and accessibility in mind. <br> Tools: Figma, Adobe Illustrator, Invision</p>
-            </div>
-
-            <div class="skill wdSkill">
-                <img class="skillIcon" src="images/Web Dev Icon.png">
-                <h3 class="skillT"> Web Development </h3>
-                <p class="skillD"> Designing websites and applications backed by research and development. <br>Tools: Visual Studio Code and Github </p>
-            </div>
-
-        </div>
-    </section>
-
-    <h1 class="myWorkH1"> My Work </h1>
     <section class="myWork">
+        <h1 class="myWorkH1"> My Work </h1>
         <div class="workGrid">
 
             <div class="projectOne projects">
@@ -154,7 +150,7 @@
         </div>
 
         
-    </section>
+    
 
     <section class="viewallProjects">
     
@@ -165,7 +161,7 @@
         </div>
     </div>
 </section>
-
+</section>
 
     <footer class="footer">
         <div class="footerContent">
