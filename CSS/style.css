@@ -565,7 +565,9 @@
     
     .navBar{display: none;}
     
-   
+   .fa-bars{
+    color: #042643;
+   }
     
     .heroMessage{font-size: 100%;}
 
